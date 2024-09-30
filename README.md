@@ -120,7 +120,7 @@ Create a class that implements `IAsyncInterceptor`, then register it for interce
 using the ProxyGenerator extension methods, e.g.
 
 ```csharp
-var myClass = new ClasThatImplementsIMyInterface();
+var myClass = new ClassThatImplementsIMyInterface();
 var generator = new ProxyGenerator();
 var interceptor = new ClasThatImplementsIAsyncInterceptor();
 IMyInterface proxy = generator.CreateInterfaceProxyWithTargetInterface<IMyInterface>(myClass, interceptor)
